@@ -19,6 +19,12 @@ export default {
 		},
 		extend: {
 			colors: {
+				neon: {
+					pink: '#FF0080',
+					cyan: '#00FFFF',
+					yellow: '#FFFF00',
+					purple: '#8A2BE2'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -69,6 +75,24 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
+				'neon-pulse': {
+					'0%, 100%': { opacity: '1', filter: 'drop-shadow(0 0 5px currentColor)' },
+					'50%': { opacity: '0.8', filter: 'drop-shadow(0 0 20px currentColor)' }
+				},
+				'neon-glow': {
+					'0%': { boxShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor' },
+					'50%': { boxShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor' },
+					'100%': { boxShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor' }
+				},
+				'neon-pulse': {
+					'0%, 100%': { opacity: '1', filter: 'drop-shadow(0 0 5px currentColor)' },
+					'50%': { opacity: '0.8', filter: 'drop-shadow(0 0 20px currentColor)' }
+				},
+				'neon-glow': {
+					'0%': { boxShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor' },
+					'50%': { boxShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor' },
+					'100%': { boxShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor' }
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -88,7 +112,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'neon-glow': 'neon-glow 2s ease-in-out infinite'
 			}
 		}
 	},
