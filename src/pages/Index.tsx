@@ -69,8 +69,8 @@ const Index = () => {
         
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
-            <span className="text-neon-pink animate-neon-pulse inline-block mr-4">NEON</span>
-            <span className="text-neon-cyan animate-neon-pulse inline-block">SIGNS</span>
+            <span className="text-neon-pink animate-neon-pulse inline-block mr-4">M</span>
+            <span className="text-neon-cyan animate-neon-pulse inline-block">NEON</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
