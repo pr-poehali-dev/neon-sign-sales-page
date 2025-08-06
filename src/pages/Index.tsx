@@ -13,7 +13,7 @@ const Index = () => {
   const [complexity, setComplexity] = useState([1]);
 
   const calculatePrice = () => {
-    const basePrice = width[0] * height[0] * 50;
+    const basePrice = width[0] * height[0] * 10;
     const complexityMultiplier = 1 + (complexity[0] - 1) * 0.5;
     return Math.round(basePrice * complexityMultiplier);
   };
@@ -195,6 +195,7 @@ const Index = () => {
                   size="lg" 
                   className="bg-neon-cyan hover:bg-neon-cyan/80 text-black font-bold"
                   style={{ boxShadow: '0 0 20px #00FFFF' }}
+                  onClick={() => alert('Телефон для заказа: 8-912-854-47-77')}
                 >
                   Оформить заказ
                 </Button>
