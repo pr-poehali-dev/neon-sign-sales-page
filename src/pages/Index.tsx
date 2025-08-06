@@ -35,14 +35,7 @@ const Index = () => {
       glowColor: "shadow-cyan-400",
       image: "/img/47dda7b2-6694-4676-aff9-02eff2f10b65.jpg"
     },
-    {
-      title: "Объемные буквы",
-      description: "3D буквы с подсветкой для максимального эффекта",
-      icon: "Type",
-      color: "text-neon-pink",
-      glowColor: "shadow-pink-400",
-      image: "/img/16b5b17c-0eee-4e19-acab-fcc5cd329db0.jpg"
-    }
+
   ];
 
   const advantages = [
