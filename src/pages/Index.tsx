@@ -56,7 +56,7 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center p-4">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-900/20 to-black"></div>
+        <div className="absolute inset-0 from-black via-purple-900/20 to-black bg-transparent"></div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
