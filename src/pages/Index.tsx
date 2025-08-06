@@ -106,9 +106,9 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            <span className="text-neon-cyan">Наши</span> <span className="text-neon-yellow">услуги</span>
+            <span className="text-neon-cyan">Неоновые</span> <span className="text-neon-yellow">вывески</span>
           </h2>
-          <p className="text-center text-gray-400 mb-12 text-lg">Полный спектр решений для вашего бизнеса</p>
+          <p className="text-center text-gray-400 mb-12 text-lg">Сделаем красиво и ярко</p>
           
           <div className="grid gap-8 max-w-md mx-auto">
             {services.map((service, index) => (
