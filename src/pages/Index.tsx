@@ -26,16 +26,7 @@ const Index = () => {
       color: "text-neon-yellow",
       glowColor: "shadow-yellow-400",
       image: "/img/10d7d2c2-d388-429c-bf63-4a13ef1aff66.jpg"
-    },
-    {
-      title: "LED панели",
-      description: "Современные LED решения любых размеров",
-      icon: "Monitor",
-      color: "text-neon-cyan",
-      glowColor: "shadow-cyan-400",
-      image: "/img/47dda7b2-6694-4676-aff9-02eff2f10b65.jpg"
-    },
-
+    }
   ];
 
   const advantages = [
@@ -112,7 +103,7 @@ const Index = () => {
           </h2>
           <p className="text-center text-gray-400 mb-12 text-lg">Полный спектр решений для вашего бизнеса</p>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid gap-8 max-w-md mx-auto">
             {services.map((service, index) => (
               <Card key={index} className="bg-gray-900/50 border-gray-700 hover:border-neon-purple transition-all duration-300 group overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
@@ -134,6 +125,7 @@ const Index = () => {
                   <Button 
                     variant="outline" 
                     className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-black"
+                    onClick={() => alert('Телефон: 8 (912) 854-47-77')}
                   >
                     Подробнее
                   </Button>
