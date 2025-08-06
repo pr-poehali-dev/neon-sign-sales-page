@@ -56,7 +56,14 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center p-4">
-        <div className="absolute inset-0 from-black via-purple-900/20 to-black bg-transparent"></div>
+        <div className="absolute inset-0">
+          <img 
+            src="/img/9aa819a3-0a1a-4880-b98b-14a9b54f4944.jpg" 
+            alt="Neon background" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
